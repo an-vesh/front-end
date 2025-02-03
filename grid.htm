@@ -1,0 +1,56 @@
+<!-- css grids -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: 10px whitesmoke groove;
+            padding: 20px;
+            display: grid;
+            /* grid-template-columns: 35% auto 40%;
+            grid-template-rows: 140px 220px 80px; */
+            grid-template: 100px 200px/ auto 20% 30%;
+            /* grid-row-gap: 10px;
+            grid-column-gap: 10px; */
+            grid-gap: 10px 10px;
+        }
+        .item{
+            border: 2px white dashed;
+            padding: 20px;
+            background-color: pink;
+            /* grid-row-start: span 2; */
+        }
+        #item3{
+            /* grid-row-start:span 2;
+            grid-row-end:span 3; */
+            grid-row: 2/ 4;
+        }
+        #i7{
+            /* grid-column-start: span 1;
+            grid-column-end: 3; */
+            grid-column: 3 /span 2
+            ;
+        }
+        #i9{
+            grid-area: 3/5/span 1/span 2;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item" id="item3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item" id="i7">item7</div>
+        <div class="item" id="i9">item9</div>
+        <div class="item">item8</div>
+    </div>
+ </body>
+ </html>

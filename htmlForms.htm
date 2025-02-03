@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" mothod="post">
+        <label for="UserName">Enter Name</label>
+        <input type="text" name="username" id="uname" size="40" maxlength="12" placeholder="Name here"><br>
+        <hr>
+        <label for="password">Enter Password</label>
+        <input type="password" size="37" id="pass" placeholder="password here"><br>
+        <hr>
+        <label for="Email">Enter E-Mail</label>
+        <input type="email" name="email" id="email" size="40" placeholder="E-Mail here" required value="example@gmail.com"><br>
+        <hr>
+        <label for="review">Write a review</label><br>
+        <textarea name="review" rows="5" cols="40">this is a sample text.</textarea>
+        <hr>
+        <label for="hobby">Chose your hobby</label><br>
+        <input type="checkbox" id="hobby" value="sketching" checked>Sketching<br>
+        <input type="checkbox" id="hobby" value="cooking">Cooking<br>
+        <input type="checkbox" id="hobby" value="music">music<br>
+        <hr>
+        <label for="program">Select your Program</label><br>
+        <input type="radio" id="btech" value="btech" name="pro" checked><label for="btech">B.tech</label><br>
+        <input type="radio" id="biotech" value="BioTech" name="pro"><label for="biotech">BioTech</label><br>
+        <hr>
+        <label for="state">Select your State</label><br>
+        <select name="state" id="state" size="2" multiple>
+            <option value="punjab">Punjab</option>
+            <option value="UttarPradsh" selected>UttarPradsh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bihar">Bihar</option>
+        </select>
+        <hr>
+        <label for="file">Chose your image</label><br>
+        <input type="file" >
+        <hr>
+        <input type="submit" name="sumbitform" id="sumbitForm" value="sumbit Form">
+        <!-- url limit 3000 but in post -> no limit  and no data visible in url -->
+        <hr>
+        <input type="reset" name="resetall" id="resetall" value="Re-set Form">
+        <hr>
+        <input type="image" name="imgbtn" id="imgbtn" src="./wp2639448-minimalist-wallpaper.png" width="100">
+    </form>
+</body>
+</html>
