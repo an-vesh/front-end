@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.nav-bar {
+    background-color: rgb(88, 219, 88);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-bar-up h1 {
+    font-size: 24px;
+}
+
+.nav-bar-down {
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 120px;
+}
+
+.info-box h1 {
+    color: rgb(88, 219, 88);
+    font-size: 22px;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: grey;
+    margin-top: 5px;
+}
+.content-box {
+    background-color: #eee;
+    padding:20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 400px;
+}
+
+.content-box h1 {
+    color: rgb(88, 219, 88);
+    font-size: 22px;
+}
+
+.content-box p {
+    font-size: 14px;
+    color: grey;
+    margin-top: 5px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer span {
+    color: rgb(88, 219, 88);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-bar-up h1 {
+        font-size: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .content-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        padding: 10px 0;
+    }
+
+    .nav-bar-up h1 {
+        font-size: 18px;
+    }
+
+    .info-box {
+        width: 95%;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="nav-bar">
+        <div class="nav-bar-up">
+            <h1>Welcome to Your Website Task</h1>
+        </div>
+        <div class="nav-bar-down">
+            <ul>
+                <li><a href="./index.htm">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Container to Wrap Both Sections -->
+<div class="hero-container">
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="info-box">
+            <h1>About CSS</h1>
+            <p>Cascading Style Sheets (CSS) allow you to style and layout your web pages.</p>
+        </div>
+        <div class="info-box">
+            <h1>Box Model</h1>
+            <p>The CSS box model describes the rectangular boxes generated for elements.</p>
+        </div>
+        <div class="content-box">
+            <h1>Responsive Design</h1>
+            <p>Responsive design ensures your webpage looks great on all devices.</p>
+        </div>
+    </div>
+
+    <!-- Content Box Now Below Hero -->
+    
+</div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p> Made Anvesh Mishra | Follow us on <span>Instagram</span> | <span>Twitter</span> | <span>LinkedIn</span></p>
+    </footer>
+
+</body>
+</html>
